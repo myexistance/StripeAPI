@@ -1,0 +1,25 @@
+{
+  "name": "stripeapi",
+  "version": "1.0.0",
+  "description": "App to Sell T-shirt with Stripe",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/myexistance/StripeAPI.git"
+  },
+  "author": "Joon Yoon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/myexistance/StripeAPI/issues"
+  },
+  "homepage": "https://github.com/myexistance/StripeAPI#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.0.0",
+    "stripe": "^8.73.0"
+  }
+}

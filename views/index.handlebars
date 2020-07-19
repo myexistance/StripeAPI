@@ -1,0 +1,34 @@
+<section class="py-2">
+  <div class="row">
+    <div class="col-md-6 text-center">
+      <h1 style="font-family:'Lobster'" class="display-3 mt-3 pt-5">
+        LIVING MY BEST LIFE T-SHIRT
+      </h1>
+
+    </div>
+    <div class="col-md-6">
+      <img src="/img/T-shirt.png" class="img-fluid rounded mx-auto mt-5 align-bottom d-block" alt="Responsive image">
+
+      <ul class="lead mx-auto pt-5">
+                <li>RELAXED FIT</li>
+                <li>HEAVY-WEIGHT</li>
+                <li>190 GSM 100% RING-SPUN COTTON</li>
+      </ul>
+      <form action="/charge" method="POST">
+        <script
+          src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+          data-key="{{stripePublishableKey}}"
+          data-name="LIVING MY BEST LIFE"
+          data-description="Fits to true sizes, All sizes available"
+          data-image="/img/marketplace.png"
+          data-locale="auto">
+        </script>
+        <script>
+          // Hide default stripe button
+          document.getElementsByClassName('stripe-button-el')[0].style.display = 'none';
+        </script>
+        <button type="submit" class="btn btn-outline-dark text-white btn-lg float-right">Purchase For $25</button>
+      </form>
+    </div>
+  </div>
+</section>
